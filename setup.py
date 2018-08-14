@@ -31,6 +31,7 @@ ext_modules = [
         depends=glob('src/qpdf/*.h'),
         include_dirs=[
             # Path to pybind11 headers
+            '/usr/local/include',
             get_pybind_include(),
             get_pybind_include(user=True)
         ],
